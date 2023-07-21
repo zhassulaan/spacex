@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@font-face {
+  font-family: 'Museo Sans Cyrillic';
+  font-weight: 300;
+  src: url('./assets/fonts/museo_sans_cyrl_300.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Museo Sans Cyrillic';
+  font-weight: 500;
+  src: url('./assets/fonts/museo_sans_cyrl_500.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Museo Sans Cyrillic';
+  font-weight: 700;
+  src: url('./assets/fonts/museo_sans_cyrl_700.ttf') format('truetype');
+}
 
 :root {
   --clr-white: #FFF;
@@ -19,7 +34,7 @@
 body {
   display: block;
   width: 100%;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Museo Sans Cyrillic', sans-serif;
   font-style: normal;
   margin: 0 auto;
   background-image: url('./assets/images/main.png');
@@ -37,4 +52,31 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+h1,
+h3,
+h5,
+p {
+  color: var(--clr-white);
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 58px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
 }

@@ -1,0 +1,29 @@
+.home {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-right: 340px;
+	margin-left: 376px;
+	padding-top: 138px;
+	&-info {
+		&__title,
+		&__description {
+			background-image: linear-gradient(293deg, transparent 7%, #FF3F04 0, #FFF 90%, #FFF 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+		}
+		&__title {
+			text-transform: uppercase;
+			margin-bottom: -8px;
+		}
+		.button {
+			margin-top: 100px;
+		}
+	}
+	&-boxes {
+		display: grid;
+		grid-template-columns: repeat(2, max-content);
+		grid-gap: 10px;
+	}
+}

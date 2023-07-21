@@ -1,0 +1,50 @@
+@keyframes under_line {
+	0% {
+		width: 0;
+		left: 50%;
+	} 100% {
+		width: 100%;
+		left: 0;
+	}
+}
+
+.header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 19.53125vw;
+	&-background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100%;
+		background-color: var(--clr-black);
+		opacity: .21;
+	}
+	&-menu {
+		display: flex;
+		gap: 40px;
+		&__item {
+			position: relative;
+			font-size: 16px;
+			font-weight: 400;
+			color: var(--clr-white);
+			cursor: pointer;
+			&.active {
+				color: #B1B1B1;
+			}
+			&:not(.active):hover::after {
+				content: '';
+				position: absolute;
+				bottom: -5px;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background-color: #3D3D3D;
+				animation: under_line .25s linear;
+			}
+		}
+	}
+}

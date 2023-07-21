@@ -1,3 +1,40 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --clr-white: #FFF;
+  --clr-black: #000;
+  --transition: all 0.3s linear;
+}
+
+*,
+::after,
+::before {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all;
+  transition-duration: 300ms;
+}
+
+body {
+  display: block;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  margin: 0 auto;
+  background-image: url('./assets/images/main.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img {
+  object-fit: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }

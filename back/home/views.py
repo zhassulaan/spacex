@@ -18,6 +18,18 @@ class MenuAPIView(APIView):
 			data = Menu.objects.all()
 		serializer = MenuSerializer(data, many=True)
 		return Response(serializer.data)
+	
+	def post(self, request, format=None):
+		data = request.data
+		serializer = MenuSerializer(data=data)
+		serializer.is_valid(raise_exception=True)
+		serializer.save()
+		response = Response()
+		response.data = {
+			'message': 'Menu Created Successfully',
+			'data': serializer.data
+		}
+		return response
 
 	def put(self, request, pk=None, format=None):
 		menu = Menu.objects.get(pk=pk)
@@ -53,6 +65,18 @@ class AdvantageAPIView(APIView):
 			data = Advantage.objects.all()
 		serializer = AdvantageSerializer(data, many=True)
 		return Response(serializer.data)
+	
+	def post(self, request, format=None):
+		data = request.data
+		serializer = AdvantageSerializer(data=data)
+		serializer.is_valid(raise_exception=True)
+		serializer.save()
+		response = Response()
+		response.data = {
+			'message': 'Advantage Created Successfully',
+			'data': serializer.data
+		}
+		return response
 
 	def put(self, request, pk=None, format=None):
 		advantage = Advantage.objects.get(pk=pk)

@@ -18,7 +18,7 @@ function Header() {
 					<Link to='/technology' className={ `header-menu__item ${ location.pathname === '/technology' ? 'active' : '' }` }>Технология</Link>
 				</li>
 				<li>
-					<Link to='/flight' className={ `header-menu__item ${ location.pathname === '/flight-schedule' ? 'active' : '' }` }>График полетов</Link>
+					<Link to='/flight-schedule' className={ `header-menu__item ${ location.pathname === '/flight-schedule' ? 'active' : '' }` }>График полетов</Link>
 				</li>
 				<li>
 					<Link to='/guarantees' className={ `header-menu__item ${ location.pathname === '/guarantees' ? 'active' : '' }` }>Гарантии</Link>

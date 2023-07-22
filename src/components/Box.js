@@ -17,9 +17,9 @@ const Wrapper = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 185px;
-	height: 185px;
-	padding-top: 37px;
+	width: 9.635417vw;
+	height: 9.635417vw;
+	padding-top: 1.927083vw;
 
 	.background {
 		position: absolute;

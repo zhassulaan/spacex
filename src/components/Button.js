@@ -26,7 +26,7 @@ const Wrapper = styled.div`
 			opacity: .05;
 		}
 		&-text {
-			font-size: 14px;
+			font-size: .729167vw;
 			opacity: .75;
 		}
 	}

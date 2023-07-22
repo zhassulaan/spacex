@@ -18,7 +18,7 @@
 :root {
   --clr-white: #FFF;
   --clr-black: #000;
-  --transition: all 0.3s linear;
+  --clr-grey: #B1B1B1;
 }
 
 *,
@@ -62,21 +62,21 @@ p {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 3.125vw;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 58px;
+  font-size: 3.020833vw;
   font-weight: 700;
 }
 
 h5 {
-  font-size: 25px;
+  font-size: 1.302083vw;
   font-weight: 500;
 }
 
 p {
-  font-size: 18px;
+  font-size: .9375vw;
   font-weight: 300;
 }

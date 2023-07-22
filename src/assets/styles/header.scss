@@ -25,19 +25,23 @@
 		opacity: .21;
 		z-index: -1;
 	}
+	&-icon {
+		width: 16.458333vw;
+		cursor: pointer;
+	}
 	&-menu {
 		display: flex;
-		gap: 40px;
+		gap: 2.08333vw;
 		&__item {
 			position: relative;
-			font-size: 16px;
+			font-size: .83333vw;
 			font-weight: 400;
 			color: var(--clr-white);
 			cursor: pointer;
 			&.active {
-				color: #B1B1B1;
+				color: var(--clr-grey);
 				&::after {
-					background-color: #B1B1B1;
+					background-color: var(--clr-grey);
 				}
 			}
 			&.active::after,

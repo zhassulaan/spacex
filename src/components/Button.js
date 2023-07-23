@@ -26,7 +26,7 @@ const Wrapper = styled.div`
 			font-size: .729167vw;
 			opacity: .75;
 		}
-		&-background {
+		&-background 
 			position: absolute;
 			width: 100%;
 			height: 100%;

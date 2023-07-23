@@ -13,7 +13,7 @@ export const fetchAdvantages = () => async (dispatch) => {
   dispatch({ type: FETCH_ADVANTAGES_REQUEST });
 
   try {
-    const response = await axios.get('http://13.53.174.131:8000/api/home/advantages/');
+    const response = await axios.get('https://13.53.174.131:8000/api/home/advantages/');
     dispatch({
       type: FETCH_ADVANTAGES_SUCCESS,
       payload: response.data,
@@ -31,7 +31,7 @@ export const fetchMenu = () => async (dispatch) => {
   dispatch({ type: FETCH_MENU_REQUEST });
 
   try {
-    const response = await axios.get('http://13.53.174.131:8000/api/home/menu/');
+    const response = await axios.get('https://13.53.174.131:8000/api/home/menu/');
     dispatch({
       type: FETCH_MENU_SUCCESS,
       payload: response.data,

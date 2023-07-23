@@ -17,9 +17,33 @@
 			text-transform: uppercase;
 			margin-bottom: -.416667vw;
 		}
-		.button {
-			margin-top: 5.208333vw;
+		&__button {
+			position: relative;
+			margin-top: 4.21875vw;
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				height: .052083vw;
+			}
+			&::before {
+				right: 8.7125vw;
+				top: 2.0125vw;
+				width: 4.75vw;
+				transform: rotate(30deg);
+				background-image: linear-gradient(90deg, transparent 5%, #516784 100%);
+			}
+			&::after {
+				right: -7.8125vw;
+				bottom: -1.52825vw;
+				width: 16.8725vw;
+				background-image: linear-gradient(90deg, #516784 30%, var(--clr-white) 100%);
+			}
 		}
+	}
+	.home-info__button:hover::before,
+	.home-info__button:hover::after {
+		background-image: linear-gradient(90deg, var(--clr-white) 30%, var(--clr-white) 100%);
 	}
 	&-boxes {
 		display: grid;

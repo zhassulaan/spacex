@@ -19,7 +19,9 @@ function Home() {
 			<div className="home-info">
 				<h3 className='home-info__title'>Путешествие</h3>
 				<h5 className='home-info__description'>на красную планету</h5>
-				<Button text={ 'Начать путешествие' } />
+				<div className="home-info__button">
+					<Button text={ 'Начать путешествие' } />
+				</div>
 			</div>
 			<div className="home-boxes">
 				{ data.map((item) => (

@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchAdvantages } from '../actions';
+
 import Box from '../components/Box';
 import '../assets/styles/home.scss';
 import Button from '../components/Button';
 
 function Home() {
+	const data = useSelector((state) => state.advantages.data);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchAdvantages());
+  }, [dispatch]);
+
 	return (
 		<div className='home'>
 			<div className="home-info">
@@ -12,10 +22,9 @@ function Home() {
 				<Button text={ 'Начать путешествие' } />
 			</div>
 			<div className="home-boxes">
-				<Box text1={ 'мы' } percentage={ 1 } text2={ 'на рынке' } />
-				<Box text1={ 'гарантируем' } percentage={ 50 } text2={ 'безопасность' } />
-				<Box text1={ 'календарик за' } percentage={ 2001 } text2={ 'в подарок' } />
-				<Box text1={ 'путешествие' } percentage={ 597 } text2={ 'дней' } />
+				{ data.map((item) => (
+					<Box key={ item.id } text1={ item.name } percentage={ item.number } text2={ item.description } />
+				)) }
 			</div>
 		</div>
 	);

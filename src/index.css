@@ -80,3 +80,7 @@ p {
   font-size: .9375vw;
   font-weight: 300;
 }
+
+.btn {
+  cursor: pointer;
+}

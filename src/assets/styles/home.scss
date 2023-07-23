@@ -1,11 +1,11 @@
 .home {
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
-	margin-right: 17.70833vw;
-	margin-left: 19.58333vw;
-	padding-top: 138px;
+	margin-right: 17.708333vw;
+	margin-left: 19.583333vw;
+	padding-top: 7.1875vw;
 	&-info {
+		padding-top: 4.1vw;
 		&__title,
 		&__description {
 			background-image: linear-gradient(293deg, transparent 7%, #FF3F04 0, #FFF 90%, #FFF 100%);
@@ -18,12 +18,12 @@
 			margin-bottom: -8px;
 		}
 		.button {
-			margin-top: 100px;
+			margin-top: 5.208333vw;
 		}
 	}
 	&-boxes {
 		display: grid;
 		grid-template-columns: repeat(2, max-content);
-		grid-gap: 10px;
+		grid-gap: .520833vw;
 	}
 }

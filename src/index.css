@@ -84,3 +84,9 @@ p {
 .btn {
   cursor: pointer;
 }
+
+@media only screen and (max-device-width: 812px) and (orientation: portrait) {
+	body {
+    background-image: none;
+  }
+}

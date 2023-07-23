@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 	justify-content: center;
 	width: 9.270833vw;
 	height: 1.71875vw;
-	border: 1px solid transparent;
+	border: .052083vw solid transparent;
   border-image: linear-gradient(30deg, #516784, #18202C);
   border-image-slice: 1;
 	.button {
@@ -26,7 +26,7 @@ const Wrapper = styled.div`
 			font-size: .729167vw;
 			opacity: .75;
 		}
-		&-background 
+		&-background {
 			position: absolute;
 			width: 100%;
 			height: 100%;
@@ -35,8 +35,8 @@ const Wrapper = styled.div`
 		}
 		&-border {
 			position: absolute;
-			top: -1px;
-			right: -1px;
+			top: -.052083vw;
+			right: -.052083vw;
 			width: 100%;
 			height: 100%;
 			&::before,
@@ -53,27 +53,27 @@ const Wrapper = styled.div`
 	&::after {
 		content: '';
 		position: absolute;
-		bottom: -1px;
-		left: -1px;
+		bottom: -.052083vw;
+		left: -.052083vw;
 		background-color: var(--clr-white);
 	}
 	.button-border::before,
 	&::before {
-		width: 5px;
-		height: 1px;
+		width: .260417vw;
+		height: .052083vw;
 	}
 	.button-border::after,
 	&::after {
-		width: 1px;
-		height: 5px;
+		width: .052083vw;
+		height: .260417vw;
 	}
 	.button-border:hover::before,
 	&:hover::before {
-		width: calc(100% + 2px);
+		width: calc(100% + .104167vw);
 	}
 	.button-border:hover::after,
 	&:hover::after {
-		height: calc(100% + 2px);
+		height: calc(100% + .104167vw);
 	}
 `;
 

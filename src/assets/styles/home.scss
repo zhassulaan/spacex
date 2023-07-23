@@ -15,7 +15,7 @@
 		}
 		&__title {
 			text-transform: uppercase;
-			margin-bottom: -8px;
+			margin-bottom: -.416667vw;
 		}
 		.button {
 			margin-top: 5.208333vw;
@@ -25,5 +25,11 @@
 		display: grid;
 		grid-template-columns: repeat(2, max-content);
 		grid-gap: .520833vw;
+	}
+}
+
+@media only screen and (max-device-width: 812px) and (orientation: portrait) {
+	.home { 
+		display: none;
 	}
 }
